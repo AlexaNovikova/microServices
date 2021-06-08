@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="eureka-service" />
+        <module name="eureka-client" />
+        <module name="common" />
+        <module name="hystrix-client" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="common" target="11" />
+      <module name="eureka-client" target="11" />
+      <module name="eureka-service" target="11" />
+      <module name="hystrix-client" target="11" />
+      <module name="spring-cloud-market" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="common" options="-parameters" />
+      <module name="eureka-client" options="-parameters" />
+      <module name="eureka-service" options="-parameters" />
+      <module name="hystrix-client" options="-parameters" />
+    </option>
+  </component>
+</project>
